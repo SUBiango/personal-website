@@ -28,7 +28,7 @@ body {
 }
 
 h1 + p {
-	margin-bottom: 5rem;
+	margin-bottom: 7rem;
 }
 
 a {
@@ -39,6 +39,9 @@ a:hover {
 	color: rgb(255, 83, 65);
 }
 
+footer p {
+	color: #777;
+}
 
 footer {
 	position: fixed;
