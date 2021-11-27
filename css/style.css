@@ -1,3 +1,10 @@
+btn {
+  display: block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -101,15 +108,15 @@ body {
 }
 
 .main-content {
-  background-image: url("../img/bg-image.jpg");
+  width: 80vw;
+  margin-left: 20vw;
   background-color: #ddd;
+  background-image: url("../img/bg-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   height: 100vh;
-  width: 80vw;
-  margin-left: 20vw;
 }
 
 .main-content .showcase {
@@ -133,7 +140,7 @@ body {
 }
 
 .main-content .showcase h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
 }
 
