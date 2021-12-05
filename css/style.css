@@ -12,11 +12,33 @@ btn {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #ddd;
+  background-color: #F6F5F7;
   font-family: Urbanist, sans-serif;
   line-height: 1.5;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem 3rem;
+}
+
+section header {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+section h2 {
+  font-size: 3rem;
 }
 
 #side-nav {
@@ -110,7 +132,7 @@ body {
 .main-content {
   width: 80vw;
   margin-left: 20vw;
-  background-color: #ddd;
+  background-color: #F6F5F7;
   background-image: url("../img/bg-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -157,6 +179,114 @@ body {
   color: #0f0f0f;
 }
 
+.container {
+  width: 80vw;
+  margin-left: 20vw;
+  background-color: #F6F5F7;
+}
+
+#about {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+#about header {
+  text-align: left;
+}
+
+#about p {
+  padding-bottom: 1rem;
+}
+
+#work {
+  max-width: 1200%;
+  margin: 0 auto;
+}
+
+#work .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#work .project-title {
+  max-width: 350px;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#work .project-title h4 {
+  margin: 5px 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+#work .project-title img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#contact {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 auto;
+}
+
+form .form-control {
+  margin-bottom: 20px;
+}
+
+form .form-control textarea {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: inherit;
+  height: 170px;
+}
+
+form .form-control input {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: inherit;
+}
+
+form button {
+  display: block;
+  background-color: #ff4500;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-color: #bababa;
+  border-radius: 2px;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: inherit;
+  width: 30%;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff4500;
+  border: 2px solid #ff4500;
+}
+
 @media (max-width: 568px) {
   #side-nav {
     display: none;
@@ -171,6 +301,30 @@ body {
   }
   .main-content .showcase p {
     font-size: 1.1rem;
+  }
+  section {
+    padding: 1rem 1rem;
+  }
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+  form .form-control {
+    margin-bottom: 15px;
+  }
+  form .form-control textarea {
+    padding: 5px;
+    height: 150px;
+    font-size: 1rem;
+  }
+  form .form-control input {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 100%;
   }
 }
 
@@ -188,6 +342,25 @@ body {
   }
   .main-content .showcase p {
     font-size: 1.4rem;
+  }
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+  #work .project-title {
+    max-width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  #work .project-title h4 {
+    margin: 5px 0;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  #work .project-title img {
+    max-width: 100%;
+    border-radius: 5px;
   }
 }
 

@@ -3,6 +3,7 @@
 @import 'utilities';
 @import 'buttons';
 
+// Global
 
 * {
     box-sizing: border-box;
@@ -10,11 +11,34 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $background-color;
     font-family: $font-stack;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: $p;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 3rem;
+
+    header {
+        text-align: center;
+        margin: $section-header-margin auto;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+    }
+
 }
 
 // Navigation
@@ -94,8 +118,7 @@ body {
     }
 }
 
-// Main Content
-
+// Home Page Main Content
 .main-content {
     @include layout;
     background-image: url('../img/bg-image.jpg');
@@ -135,6 +158,96 @@ body {
     }
 }
 
+// About 
+.container {
+    @include layout;
+}
+
+#about {
+   @include section-layout;
+
+   header {
+       text-align: left;
+   }
+
+   p {
+       padding-bottom: 1rem;
+   }
+}
+
+//Work
+#work {
+   max-width: 1200%;
+   margin: 0 auto;
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-title {
+        max-width: 350px;
+        margin: 20px;
+        background-color: $light-color;
+        padding: 20px;
+        h4 {
+            margin: 5px 0;
+            font-weight: 900;
+            font-size: $h4-font-size;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+// Contact
+#contact {
+    @include section-layout;
+}
+
+form {
+    margin: 0 auto;
+
+    .form-control {
+        margin-bottom: 20px;
+      }
+
+    .form-control textarea {
+        @include form-input-textarea;
+        height: 170px;
+    }
+
+    .form-control input {
+        @include form-input-textarea;
+    }
+
+    button {
+        display: block;
+        background-color: $secondary-color;
+        font-weight: 700;
+        color: $light-color;
+        border: none;
+        border-color: $main-grey;
+        border-radius: 2px;
+        padding: 12px 20px;
+        font-family: inherit;
+        font-size: inherit;
+        width: 30%;
+        text-transform: uppercase;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $light-color;
+        color: $secondary-color;
+        border: 2px solid $secondary-color;
+    }
+}
+
 // Media Queries 
 @media (max-width: 568px) {
     #side-nav {
@@ -155,6 +268,39 @@ body {
             p {
                 font-size: 1.1rem;
             }
+        }
+    }
+
+    section {
+        padding: 1rem 1rem;
+    }
+
+    //About
+    .container {
+       width: 100vw;
+       margin: 0;
+    }
+
+    form {
+        .form-control {
+            margin-bottom: 15px;
+          }
+    
+        .form-control textarea {
+            padding: 5px;
+            height: 150px;
+            font-size: 1rem;
+        }
+    
+        .form-control input {
+            padding: 5px;
+            font-size: 1rem;
+        }
+    
+        button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            width: 100%;
         }
     }
 }
@@ -180,12 +326,29 @@ body {
             }
         }
     }
-};
+
+      //About
+      .container {
+        width: 100vw;
+        margin: 0;
+     }
+
+     //Work
+    #work {
+        .project-title {
+            max-width: 250px;
+        }
+
+
+        .project-title {
+            max-width: 400px;
+        }  
+}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px)  {
     #side-nav {
         display: none;
-    };
+    }
 
     .main-content {
         margin: 0;
@@ -199,4 +362,15 @@ body {
             } 
         }
     }
-};
+
+
+    #work {
+        .project-title {
+            max-width: 250px;
+        }
+
+
+        .project-title {
+            max-width: 400px;
+        } 
+}

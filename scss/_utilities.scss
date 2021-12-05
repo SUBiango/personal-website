@@ -3,3 +3,16 @@
     margin-left: 20vw;
     background-color: $background-color;
 }
+
+@mixin section-layout {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+@mixin form-input-textarea {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: inherit;
+}
