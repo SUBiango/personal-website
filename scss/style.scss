@@ -305,10 +305,10 @@ form {
     }
 }
 
-@media only screen and (min-width: 569px) and (max-width: 768px)  {
+@media only screen and (min-width: 569px) and (max-width: 768px) {
     #side-nav {
         display: none;
-    };
+    }
 
     .main-content {
         margin: 0;
@@ -342,10 +342,11 @@ form {
 
         .project-title {
             max-width: 400px;
-        }  
+        } 
+    } 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px)  {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     #side-nav {
         display: none;
     }
@@ -362,14 +363,6 @@ form {
             } 
         }
     }
-
-
-    #work {
-        .project-title {
-            max-width: 250px;
-        }
-
-
         .project-title {
             max-width: 400px;
         } 
