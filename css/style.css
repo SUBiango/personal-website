@@ -133,11 +133,11 @@ section h2 {
   width: 80vw;
   margin-left: 20vw;
   background-color: #F6F5F7;
-  background-image: url("../img/bg-image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(rgba(255, 69, 0, 0.5)), to(rgba(255, 106, 51, 0.5))), url("../img/bg-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 69, 0, 0.5), rgba(255, 106, 51, 0.5)), url("../img/bg-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: overlay;
   height: 100vh;
 }
 
@@ -158,7 +158,7 @@ section h2 {
   text-align: center;
   width: 100%;
   height: 100%;
-  color: #0f0f0f;
+  color: #fff;
 }
 
 .main-content .showcase h1 {
@@ -176,7 +176,7 @@ section h2 {
 
 .main-content .showcase .contact-details {
   padding-right: 10px;
-  color: #0f0f0f;
+  color: #fff;
 }
 
 .container {
