@@ -129,10 +129,90 @@ section h2 {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
+.navbar {
+  width: 250px;
+  height: 50%;
+  background-color: #0f0f0f;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 0 160%;
+}
+
+.navbar .hamburger-menu {
+  width: 36px;
+  height: 30px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .hamburger-menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.navbar .hamburger-menu .line1 {
+  -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.navbar .hamburger-menu .line3 {
+  -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
+          transform: rotateZ(45deg) translate(-8px, -6px);
+}
+
+.navbar .hamburger-menu .line2 {
+  opacity: 0;
+}
+
+.navbar .nav-list {
+  text-align: right;
+}
+
+.navbar .nav-list .nav-item {
+  list-style: none;
+  margin-right: -70px;
+  margin-bottom: 10px;
+}
+
+.navbar .nav-list .nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.50px;
+  position: relative;
+}
+
 .main-content {
   width: 80vw;
   margin-left: 20vw;
   background-color: #F6F5F7;
+  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(rgba(255, 69, 0, 0.5)), to(rgba(255, 106, 51, 0.5))), url("../img/bg-image.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 69, 0, 0.5), rgba(255, 106, 51, 0.5)), url("../img/bg-image.jpg");
   background-position: center;
