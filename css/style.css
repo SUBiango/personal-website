@@ -136,7 +136,7 @@ section h2 {
   color: #fff;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,17 +175,17 @@ section h2 {
   transition: all .8s;
 }
 
-.navbar .hamburger-menu .line1 {
+.navbar .hamburger-menu .change .line1 {
   -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
           transform: rotateZ(-45deg) translate(-8px, 6px);
 }
 
-.navbar .hamburger-menu .line3 {
+.navbar .hamburger-menu .change .line3 {
   -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
           transform: rotateZ(45deg) translate(-8px, -6px);
 }
 
-.navbar .hamburger-menu .line2 {
+.navbar .hamburger-menu .change .line2 {
   opacity: 0;
 }
 

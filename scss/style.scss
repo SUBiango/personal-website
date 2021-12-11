@@ -127,11 +127,13 @@ section {
     color: $light-color;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 0 160%;
+
+  
 
     .hamburger-menu {
         width: 36px;
@@ -151,15 +153,15 @@ section {
             transition: all .8s;
         }
 
-        .line1 {
+        .change .line1 {
             transform: rotateZ(-45deg) translate(-8px, 6px);
         }
 
-        .line3 {
+        .change .line3 {
             transform: rotateZ(45deg) translate(-8px, -6px);;
         }
 
-        .line2 {
+        .change .line2 {
             opacity: 0;
         }
     }
