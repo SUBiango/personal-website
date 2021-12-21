@@ -42,18 +42,18 @@ section h2 {
 }
 
 .change .line1 {
-  -webkit-transform: rotateZ(-45deg) translate(-5px, 6px);
-          transform: rotateZ(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotateZ(-45deg) translate(-6px, 3px);
+          transform: rotateZ(-45deg) translate(-6px, 3px);
 }
 
 .change .line2 {
-  -webkit-transform: rotateZ(45deg) translate(-5px, -6px);
-          transform: rotateZ(45deg) translate(-5px, -6px);
+  -webkit-transform: rotateZ(45deg) translate(-6px, -3px);
+          transform: rotateZ(45deg) translate(-6px, -3px);
 }
 
 .navbar {
   width: 250px;
-  height: 50%;
+  height: 60%;
   background-color: #0f0f0f;
   color: #fff;
   position: fixed;
@@ -75,11 +75,11 @@ section h2 {
 }
 
 .navbar .hamburger-menu {
-  width: 40px;
-  height: 34px;
+  width: 36px;
+  height: 30px;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,8 +90,8 @@ section h2 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 5px;
-  border-radius: 50%;
+  padding: 3px 0;
+  border-radius: 5px;
   background-color: #ff4500;
 }
 
@@ -99,6 +99,7 @@ section h2 {
   width: 50%;
   height: 2px;
   margin: 0 auto;
+  padding: 0;
   background-color: #fff;
   -webkit-transition: all .8s;
   transition: all .8s;
@@ -106,12 +107,15 @@ section h2 {
 
 .navbar .nav-list {
   text-align: right;
+  margin-left: 100px;
 }
 
 .navbar .nav-list .nav-item {
   list-style: none;
-  margin-right: -70px;
-  margin-bottom: 10px;
+}
+
+.navbar .nav-list a {
+  color: #bababa;
 }
 
 .navbar .nav-list .nav-link {
@@ -171,6 +175,10 @@ section h2 {
   font-weight: 700;
 }
 
+#side-nav .profile a {
+  color: #bababa;
+}
+
 #side-nav ul {
   margin-top: 2.5rem;
   text-align: center;
@@ -192,6 +200,10 @@ section h2 {
   color: #ff4500;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
+}
+
+#side-nav ul li a.active {
+  color: #ff4500;
 }
 
 #side-nav footer {

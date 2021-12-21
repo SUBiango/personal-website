@@ -45,16 +45,16 @@ section {
 
 //Hamburger Menu 
 .change .line1 {
-    transform: rotateZ(-45deg) translate(-5px, 6px);
+    transform: rotateZ(-45deg) translate(-6px, 3px);
 }
 
 .change .line2 {
-    transform: rotateZ(45deg) translate(-5px, -6px);
+    transform: rotateZ(45deg) translate(-6px, -3px);
 }
 
 .navbar {
     width: 250px;
-    height: 50%;
+    height: 60%;
     background-color: $primary-color;
     color: $light-color;
     position: fixed;
@@ -68,23 +68,24 @@ section {
     z-index: 2;
 
     .hamburger-menu {
-        width: 40px;
-        height: 34px;
+        width: 36px;
+        height: 30px;
         position: fixed;
-        top: 30px;
-        right: 30px;
+        top: 20px;
+        right: 20px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 5px;
-        border-radius: 50%;
+        padding: 3px 0;
+        border-radius: 5px;
         background-color: $secondary-color;
 
         .line {
             width: 50%;
             height: 2px;
             margin: 0 auto;
+            padding: 0;
             background-color: $light-color;
             transition: all .8s;
         }
@@ -92,11 +93,14 @@ section {
 
     .nav-list {
         text-align: right;
+        margin-left: 100px;
 
         .nav-item {
             list-style: none;
-            margin-right: -70px;
-            margin-bottom: 10px;
+        }
+
+        a {
+            color: $main-grey;
         }
 
         .nav-link {
@@ -117,6 +121,8 @@ section {
 
 
 // Navigation
+
+
 
 #side-nav {
     position: fixed;
@@ -150,6 +156,10 @@ section {
             margin-top: 0.7rem;
             font-weight: 700;
         }
+        
+        a {
+            color: $main-grey;
+        }
     }
 
     ul {
@@ -171,6 +181,10 @@ section {
                 color: $secondary-color;
                 transition: color 0.3s ease-out;
             }
+            a.active {
+                color: $secondary-color;
+            }
+
         }
     }
 
