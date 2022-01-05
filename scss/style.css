@@ -453,21 +453,4 @@ form button:hover {
     max-width: 400px;
   }
 }
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #side-nav {
-    display: none;
-  }
-  .main-content {
-    margin: 0;
-    width: 100vw;
-  }
-  .main-content .showcase h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-  }
-  .project-title {
-    max-width: 400px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
