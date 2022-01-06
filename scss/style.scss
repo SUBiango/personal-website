@@ -392,6 +392,7 @@ form {
 }
 
 @media only screen and (min-width: 569px) and (max-width: 768px) {
+
     #side-nav {
         display: none;
     }
@@ -432,6 +433,30 @@ form {
     } 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) { 
-    
+@media only screen and (min-width: 769px) and (max-width: 1094px) { 
+    .navbar {
+        display: none;
+    }
+
+    .social-buttons {
+        display: none;
+    }
+
+     //Work
+     #work {
+        .project-title {
+            max-width: 250px;
+            margin: 15px;
+        }
+    } 
+}
+
+@media only screen and (min-width: 1095px) {
+    .navbar {
+        display: none;
+    }
+
+    .social-buttons {
+        display: none;
+    }
 }
