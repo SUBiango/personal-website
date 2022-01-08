@@ -112,6 +112,7 @@ section h2 {
 
 .navbar .nav-list .nav-item {
   list-style: none;
+  padding-bottom: 10px;
 }
 
 .navbar .nav-list a {
