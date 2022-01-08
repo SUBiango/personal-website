@@ -84,7 +84,7 @@
 				<p>Let's work together!</p>
 			</header>
 
-			<form name="contact" method="POST" data-netlify="true" id="contact-form">
+			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="contact-form">
 				
 					<div class="form-control">
 						<label for="name"></label>
@@ -106,7 +106,9 @@
 					<label for="comment"></label>
 					<textarea name="comment" id="comment" row="100" cols="50" placeholder="Type your message here..."></textarea>
 				</div>
-			
+				
+				<div data-netlify-recaptcha="true"></div>
+
 				<button type="submit" id="submit">Let him fly</button>
 			</form>
 		</section>
