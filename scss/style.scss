@@ -1,14 +1,67 @@
 // Variables
 @import 'config';
-@import 'utilities';
-@import 'buttons';
 
 // Global
-
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: #fff;
+}
+
+.container {
+    padding: 5rem;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 1.2;
+
+    a {
+        text-decoration: none;
+        color: #e8491d;
+        border-bottom: 5px solid #e8491d;
+    }
+
+    a:hover {
+        border-bottom: none;
+    }
+
+    header {
+
+        margin-bottom: 4rem;
+
+        span {
+            font-style: italic;
+            color: #6f6f6f;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px dashed #ccc;
+            background: #999;
+            margin-top: 2rem;
+        }
+    }
+    
+
+    .about-me {
+       p {
+       margin-bottom: 2rem;
+       }
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        header {
+            margin-bottom: 10rem;
+        }
+    }
 }
 
