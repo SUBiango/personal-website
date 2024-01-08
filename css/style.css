@@ -18,10 +18,6 @@ body {
 .container a {
   text-decoration: none;
   color: #e8491d;
-  border-bottom: 5px solid #e8491d;
-}
-.container a:hover {
-  border-bottom: none;
 }
 .container header {
   margin-bottom: 4rem;
@@ -48,6 +44,15 @@ body {
 @media only screen and (max-width: 600px) {
   .container {
     padding: 2rem;
+  }
+  .container header {
+    margin-bottom: 2rem;
+  }
+  .container header hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    margin-top: 0.5rem;
   }
   .container .about-me p {
     margin-bottom: 1rem;
