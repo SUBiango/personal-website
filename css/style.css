@@ -40,9 +40,29 @@ body {
 .container .about-me p {
   margin-bottom: 2rem;
 }
+.container .about-me .socials a {
+  border-bottom: none;
+  color: #000;
+}
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
+  .container .about-me p {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 1400px) {
   .container header {
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
+  }
+  .container .about-me p {
+    margin-bottom: 6rem;
   }
 }/*# sourceMappingURL=style.css.map */
