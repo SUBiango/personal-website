@@ -7,13 +7,13 @@
 body {
   font-family: "Urbanist", sans-serif;
   background: #fff;
-  font-size: 5vmax;
 }
 
 .container {
   padding: 5rem;
   font-weight: 600;
   line-height: 1.2;
+  font-size: 4.5vmax;
 }
 .container a {
   text-decoration: none;
@@ -41,6 +41,7 @@ body {
   color: #000;
 }
 
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container {
     padding: 1rem;
@@ -58,16 +59,20 @@ body {
     margin-bottom: 1rem;
   }
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .container {
     padding: 3rem;
   }
 }
-@media only screen and (min-width: 1400px) {
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .container header {
     margin-bottom: 4rem;
   }
   .container .about-me p {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
