@@ -1,10 +1,7 @@
 // Variables
 @import 'config';
-@import 'utilities';
-@import 'buttons';
 
 // Global
-
 
 * {
     box-sizing: border-box;
@@ -13,3 +10,98 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: #fff;
+}
+
+.container {
+    padding: 5rem;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 1.2;
+
+    a {
+        text-decoration: none;
+        color: #e8491d;
+    }
+
+    header {
+
+        margin-bottom: 4rem;
+
+        span {
+            font-style: italic;
+            color: #6f6f6f;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px dashed #ccc;
+            background: #999;
+            margin-top: 2rem;
+        }
+    }
+    
+
+    .about-me {
+       p {
+        margin-bottom: 2rem;
+       }
+
+       .socials {
+        a {
+            border-bottom: none;
+            color: #000;
+        }
+       }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 2rem;
+
+        header {
+            margin-bottom: 2rem;
+
+            hr {
+                border: 0;
+                border-bottom: 1px dashed #ccc;
+                background: #999;
+                margin-top: .5rem;
+            }
+        }
+
+        .about-me {
+            p {
+            margin-bottom: 1rem;
+            }
+         }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        header {
+            margin-bottom: 4rem;
+        }
+
+        .about-me {
+            p {
+            margin-bottom: 6rem;
+            }
+         }
+    }
+}
+
+>>>>>>> redesign
