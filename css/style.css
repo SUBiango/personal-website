@@ -7,11 +7,11 @@
 body {
   font-family: "Urbanist", sans-serif;
   background: #fff;
+  font-size: 5vw;
 }
 
 .container {
   padding: 5rem;
-  font-size: 5vw;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -44,6 +44,7 @@ body {
 @media only screen and (max-width: 600px) {
   .container {
     padding: 2rem;
+    font-size: 5vh;
   }
   .container header {
     margin-bottom: 2rem;
@@ -56,11 +57,6 @@ body {
   }
   .container .about-me p {
     margin-bottom: 1rem;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .container {
-    font-size: 4vw;
   }
 }
 @media only screen and (min-width: 1400px) {
