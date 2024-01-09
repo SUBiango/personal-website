@@ -69,6 +69,9 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .container {
+    font-size: 5vmax;
+  }
   .container header {
     margin-bottom: 4rem;
   }

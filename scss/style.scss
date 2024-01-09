@@ -107,6 +107,8 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .container {
+        font-size: 5vmax;
+
         header {
             margin-bottom: 4rem;
         }
