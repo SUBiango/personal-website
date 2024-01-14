@@ -6,14 +6,16 @@
 
 body {
   font-family: "Urbanist", sans-serif;
-  background: #fff;
+  background: #f0efef;
 }
 
 .container {
-  padding: 5rem;
-  font-weight: 600;
+  max-width: 700px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  font-weight: 500;
   line-height: 1.2;
-  font-size: 4.5vmax;
+  font-size: 2rem;
 }
 .container a {
   text-decoration: none;
@@ -21,6 +23,12 @@ body {
 }
 .container header {
   margin-bottom: 4rem;
+}
+.container header h1 {
+  font-size: 2.2rem;
+}
+.container header h5 {
+  font-weight: 500;
 }
 .container header span {
   font-style: italic;
@@ -36,23 +44,22 @@ body {
 .container .about-me p {
   margin-bottom: 2rem;
 }
-.container .about-me .socials a {
-  border-bottom: none;
-  color: #000;
+.container img {
+  width: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 1rem;
+    font-size: 1.5rem;
   }
   .container header {
     margin-bottom: 2rem;
   }
+  .container header h1 {
+    font-size: 2.5rem;
+  }
   .container header hr {
-    border: 0;
-    border-bottom: 1px dashed #ccc;
-    background: #999;
     margin-top: 0.5rem;
   }
   .container .about-me p {
@@ -62,19 +69,25 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .container {
-    padding: 2rem;
+    font-size: 1.7rem;
   }
   .container header {
     margin-bottom: 3rem;
   }
+  .container header h1 {
+    font-size: 4rem;
+  }
   .container header hr {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .container header {
     margin-bottom: 3.5rem;
+  }
+  .container header h1 {
+    font-size: 4.5rem;
   }
   .container .about-me p {
     margin-bottom: 2.5rem;
@@ -85,19 +98,19 @@ body {
   .container header {
     margin-bottom: 4rem;
   }
+  .container header hr {
+    margin-top: 1rem;
+  }
   .container .about-me p {
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .container {
-    font-size: 5vmax;
-  }
   .container header {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
   .container .about-me p {
-    margin-bottom: 4.5rem;
+    margin-bottom: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

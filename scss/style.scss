@@ -12,24 +12,32 @@
 
 body {
     font-family: 'Urbanist', sans-serif;
-    background: #fff;
+    background: #f0efef;
 }
 
 .container {
-    padding: 5rem;
-    font-weight: 600;
+    max-width: 700px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    font-weight: 500;
     line-height: 1.2;
-    font-size: 4.5vmax;
-
+    font-size: 2rem;
 
     a {
         text-decoration: none;
         color: #e8491d;
     }
-
+    
     header {
-
         margin-bottom: 4rem;
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h5 {
+            font-weight: 500;
+        }
 
         span {
             font-style: italic;
@@ -51,27 +59,27 @@ body {
         margin-bottom: 2rem;
        }
 
-       .socials {
-        a {
-            border-bottom: none;
-            color: #000;
-        }
-       }
+    }
+
+    img {
+        width: 100%;
     }
 }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 1rem;
+        font-size: 1.5rem;
 
         header {
             margin-bottom: 2rem;
 
+            h1 {
+                font-size: 2.5rem;
+            }
+
             hr {
-                border: 0;
-                border-bottom: 1px dashed #ccc;
-                background: #999;
                 margin-top: .5rem;
             }
         }
@@ -87,13 +95,17 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .container {
-        padding: 2rem;
+        font-size: 1.7rem;
 
         header {
             margin-bottom: 3rem;
 
+            h1 {
+                font-size: 4rem;
+            }
+
             hr {
-                margin-top: 0.50rem;
+                margin-top: 0.75rem;
             }
         }
     }
@@ -104,6 +116,10 @@ body {
     .container {
         header {
             margin-bottom: 3.5rem;
+
+            h1 {
+                font-size: 4.5rem;
+            }
         }
 
         .about-me {
@@ -116,14 +132,21 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
     .container {
+
         header {
             margin-bottom: 4rem;
+
+            
+            hr {
+                margin-top: 1rem;
+            }
         }
 
         .about-me {
             p {
-            margin-bottom: 3.5rem;
+            margin-bottom: 3rem;
             }
          }
     }
@@ -133,15 +156,14 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .container {
-        font-size: 5vmax;
 
         header {
-            margin-bottom: 7rem;
+            margin-bottom: 4rem;
         }
 
         .about-me {
             p {
-            margin-bottom: 4.5rem;
+            margin-bottom: 2rem;
             }
          }
     }
