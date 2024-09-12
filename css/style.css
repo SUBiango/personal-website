@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto Mono", system-ui;
   background-color: #323437;
+  font-size: 1.1rem;
 }
 
 img {
@@ -16,4 +17,222 @@ img {
 .container {
   max-width: 700px;
   margin: auto;
+}
+.container header {
+  padding: 1rem;
+  background-color: #646669;
+  color: #D1D0C5;
+  margin: 3rem 0;
+  border-radius: 50px;
+}
+.container header img {
+  width: 25px;
+}
+.container header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.container header nav ul a {
+  color: #D1D0C5;
+  text-decoration: none;
+}
+.container header nav ul a:hover {
+  color: #ffffff;
+}
+.container .hero {
+  padding-top: 4rem;
+}
+.container .hero .intro {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.container .hero .intro img {
+  width: 18%;
+  border-radius: 5%;
+}
+.container .hero .intro p {
+  color: #D1D0C5;
+  font-size: 1.1rem;
+  padding: 5px 0;
+  text-align: justify;
+}
+.container .hero .links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.container .hero .links a {
+  text-decoration: none;
+  color: #D1D0C5;
+}
+.container .hero .links .btn1 {
+  background-color: #212121;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #D1D0C5;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.container .hero .links .btn2 {
+  background-color: #646669;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #D1D0C5;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.container .hero .links svg {
+  width: 30px;
+  color: #D1D0C5;
+  cursor: pointer;
+}
+.container .about {
+  padding-top: 4rem;
+  color: #D1D0C5;
+}
+.container .about h1 {
+  margin-bottom: 1.5rem;
+}
+.container .about p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.container .projects {
+  padding-top: 4rem;
+  color: #D1D0C5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container .projects h1 {
+  margin-bottom: 1.5rem;
+}
+.container .projects .project {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background-color: #646669;
+  border-radius: 10px;
+}
+.container .projects .project .project-description {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .projects .project .project-description .stack {
+  display: flex;
+  gap: 0.5rem;
+}
+.container .projects .project .project-description .stack span {
+  background-color: #323437;
+  color: #D1D0C5;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+.container .projects .project img {
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+}
+.container .projects .project img:nth-child(even) {
+  border-radius: 0 10px 10px 0;
+  width: 50%;
+}
+.container .toolbox {
+  padding-top: 4rem;
+  color: #D1D0C5;
+}
+.container .toolbox h1 {
+  margin-bottom: 1.5rem;
+}
+.container .toolbox p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.container .toolbox .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.container .toolbox .tools span {
+  background-color: #646669;
+  color: #D1D0C5;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.container .contact {
+  padding-top: 4rem;
+  color: #D1D0C5;
+}
+.container .contact h1 {
+  margin-bottom: 1.5rem;
+}
+.container .contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .contact form .form-group {
+  display: flex;
+  gap: 2rem;
+}
+.container .contact form input, .container .contact form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  background-color: #646669;
+  color: #D1D0C5;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+.container .contact form input::-webkit-input-placeholder {
+  color: #D1D0C5;
+}
+.container .contact form input:-moz-placeholder {
+  color: #D1D0C5;
+}
+.container .contact form input::-ms-input-placeholder {
+  color: #D1D0C5;
+}
+.container .contact form textarea::-webkit-input-placeholder {
+  color: #D1D0C5;
+}
+.container .contact form textarea:-moz-placeholder {
+  color: #D1D0C5;
+}
+.container .contact form textarea::-ms-input-placeholder {
+  color: #D1D0C5;
+}
+.container .contact form button {
+  background-color: #646669;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  color: #D1D0C5;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.container footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #D1D0C5;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #212121;
+  padding: 1rem;
+  border-radius: 50px;
+}
+.container footer a {
+  color: #D1D0C5;
+  text-decoration: none;
+}
+.container footer p {
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

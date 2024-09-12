@@ -13,6 +13,7 @@
 body {
     font-family: "Roboto Mono", system-ui;
     background-color: $background-color;
+    font-size: $p;
 }
 
 img {
@@ -22,4 +23,269 @@ img {
 .container {
     max-width: 700px;
     margin: auto;
+
+    header {
+    padding: 1rem;
+    background-color: $header;
+    color: $copy;
+    margin: 3rem 0;
+    border-radius: 50px;
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+        img {
+            width: 25px;
+        }
+    
+        nav {
+            ul {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+
+                a {
+                    color: $copy;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .hero {
+        padding-top: $section-header-margin;
+
+        .intro {
+            margin-bottom: 1rem;
+            
+            img {
+                width: 18%;
+                border-radius: 5%;
+            }
+            
+            display: flex;
+            gap: 4rem;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: $copy;
+                font-size: $p;
+                padding: 5px 0;
+                text-align: justify;
+            }
+        }
+
+    .links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $copy;
+        }
+
+        .btn1 {
+            background-color: #212121;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            color: $copy;
+            font-size: $p-form-mobile;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            background-color: $primary-color;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            color: $copy;
+            font-size: $p-form-mobile;
+            cursor: pointer;
+        }
+
+        svg {
+            width: 30px;
+            color: $copy;
+            cursor: pointer;
+        }
+    }
 }
+
+    .about {
+        padding-top: $section-header-margin;
+        color: $copy;
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: $p;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .projects {
+        padding-top: $section-header-margin;
+        color: $copy;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .project {
+            display: flex;
+            margin-bottom: 1.5rem;
+            background-color: $primary-color;
+            border-radius: 10px;
+
+            .project-description {
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .stack {
+                    display: flex;
+                    gap: 0.5rem;
+
+                    span {
+                        background-color: $background-color;
+                        color: $copy;
+                        padding: 0.3rem 0.5rem;
+                        border-radius: 50px;
+                        font-size: $p-form-mobile;
+                    }
+                }
+            }
+
+            img {
+                border-radius: 10px 0 0 10px;
+                width: 50%;
+            }
+
+            img:nth-child(even) {
+                border-radius: 0 10px 10px 0;
+                width: 50%;
+            }
+        }
+
+    }
+
+    .toolbox {
+        padding-top: $section-header-margin;
+        color: $copy;
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: $p;
+            margin-bottom: 1rem;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+
+            span {
+                background-color: $header;
+                color: $copy;
+                padding: 0.3rem 0.5rem;
+                border-radius: 50px;
+                font-size: $p-form-mobile;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .contact {
+        padding-top: $section-header-margin;
+        color: $copy;
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .form-group {
+                display: flex;
+                gap: 2rem;
+            }
+
+            input, textarea {
+                padding: 0.5rem;
+                border-radius: 5px;
+                border: none;
+                width: 100%;
+                background-color: $header;
+                color: $copy;
+                font-family: inherit;
+                font-size: $p;
+            }
+            input::-webkit-input-placeholder {
+              color: $copy; 
+            }
+            input:-moz-placeholder {
+              color: $copy; 
+            }
+            input::-ms-input-placeholder {
+              color: $copy; 
+            }
+
+            textarea::-webkit-input-placeholder {
+              color: $copy;
+            }
+            textarea:-moz-placeholder {
+              color: $copy;
+            }
+            textarea::-ms-input-placeholder {
+              color: $copy;
+            }
+            
+            button {
+                background-color: $primary-color;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                border: none;
+                color: $copy;
+                font-size: $p;
+                cursor: pointer;
+            }
+        }
+    }
+
+    footer {
+        margin-top: $section-header-margin;
+        margin-bottom: 2rem;
+        color: $copy;
+        font-size: $p-form-mobile;
+        text-align: center;
+        background-color: #212121;
+        padding: 1rem;
+        border-radius: 50px;
+
+        a {
+            color: $copy;
+            text-decoration: none;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+    }
+
+}
+
