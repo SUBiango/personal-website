@@ -123,6 +123,13 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
+.container .projects .project .project-description a {
+  text-decoration: none;
+  color: #D1D0C5;
+}
+.container .projects .project .project-description a:hover {
+  color: #ffffff;
+}
 .container .projects .project .project-description .stack {
   display: flex;
   gap: 0.5rem;
@@ -218,6 +225,11 @@ img {
   color: #D1D0C5;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.container .contact form button:hover {
+  background-color: #ffffff;
+  color: #646669;
 }
 .container footer {
   margin-top: 4rem;

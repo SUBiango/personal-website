@@ -30,7 +30,6 @@ img {
     color: $copy;
     margin: 3rem 0;
     border-radius: 50px;
-    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
         img {
             width: 25px;
@@ -151,6 +150,15 @@ img {
                 flex-direction: column;
                 justify-content: space-between;
 
+                a  {
+                    text-decoration: none;
+                    color: $copy;
+                }
+
+                a:hover {
+                    color: $white;
+                }
+
                 .stack {
                     display: flex;
                     gap: 0.5rem;
@@ -263,7 +271,14 @@ img {
                 color: $copy;
                 font-size: $p;
                 cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $white;
+                    color: $primary-color;
+                }
             }
+
         }
     }
 
@@ -289,3 +304,4 @@ img {
 
 }
 
+// Media Queries
