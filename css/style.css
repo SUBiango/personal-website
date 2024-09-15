@@ -19,11 +19,13 @@ img {
   margin: auto;
 }
 .container header {
-  padding: 1rem;
+  position: sticky;
+  top: 1.5rem;
+  padding: 0.7rem;
   background-color: #646669;
   color: #D1D0C5;
-  margin: 3rem 0;
   border-radius: 50px;
+  z-index: 1000;
 }
 .container header img {
   width: 25px;
@@ -41,7 +43,7 @@ img {
   color: #ffffff;
 }
 .container .hero {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 .container .hero .intro {
   margin-bottom: 1rem;
@@ -49,6 +51,10 @@ img {
   gap: 4rem;
   justify-content: center;
   align-items: center;
+}
+.container .hero .intro span {
+  color: #ffffff;
+  font-weight: 700;
 }
 .container .hero .intro img {
   width: 18%;
@@ -60,49 +66,73 @@ img {
   padding: 5px 0;
   text-align: justify;
 }
-.container .hero .links {
+.container .hero .cta {
   display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: space-between;
 }
-.container .hero .links a {
+.container .hero .cta .quick-links {
+  display: flex;
+  gap: 2rem;
+}
+.container .hero .cta .quick-links a {
   text-decoration: none;
   color: #D1D0C5;
 }
-.container .hero .links .btn1 {
+.container .hero .cta .quick-links .btn1 {
   background-color: #212121;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 5px;
   color: #D1D0C5;
   font-size: 1rem;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
-.container .hero .links .btn2 {
+.container .hero .cta .quick-links .btn1:hover {
+  background-color: #ffffff;
+  color: #646669;
+}
+.container .hero .cta .quick-links .btn2 {
   background-color: #646669;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 5px;
   color: #D1D0C5;
   font-size: 1rem;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
-.container .hero .links svg {
+.container .hero .cta .quick-links .btn2:hover {
+  background-color: #ffffff;
+  color: #646669;
+}
+.container .hero .cta .social {
+  display: flex;
+  gap: 1rem;
+}
+.container .hero .cta .social svg {
   width: 30px;
   color: #D1D0C5;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.container .hero .cta .social svg:hover {
+  color: #646669;
 }
 .container .about {
-  padding-top: 4rem;
+  padding-top: 6rem;
   color: #D1D0C5;
 }
 .container .about h1 {
   margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
 .container .about p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 .container .projects {
-  padding-top: 4rem;
+  padding-top: 6rem;
   color: #D1D0C5;
   display: flex;
   flex-direction: column;
@@ -110,18 +140,25 @@ img {
 }
 .container .projects h1 {
   margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
 .container .projects .project {
   display: flex;
+  gap: 1rem;
   margin-bottom: 1.5rem;
   background-color: #646669;
   border-radius: 10px;
+  overflow: hidden;
 }
 .container .projects .project .project-description {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.container .projects .project .project-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .container .projects .project .project-description a {
   text-decoration: none;
@@ -139,33 +176,42 @@ img {
   color: #D1D0C5;
   padding: 0.3rem 0.5rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .container .projects .project img {
-  border-radius: 10px 0 0 10px;
+  border-radius: 0 10px 0 10px;
   width: 50%;
+  margin: 2rem -1.5rem -1.5rem -1.5rem;
+  transition: transform 0.3s;
+}
+.container .projects .project img:hover {
+  transform: rotate(3deg);
 }
 .container .projects .project img:nth-child(even) {
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px 0 10px 0;
   width: 50%;
 }
-.container .toolbox {
-  padding-top: 4rem;
+.container .projects .project img:nth-child(even):hover {
+  transform: rotate(-3deg);
+}
+.container .skills {
+  padding-top: 6rem;
   color: #D1D0C5;
 }
-.container .toolbox h1 {
+.container .skills h1 {
   margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
-.container .toolbox p {
+.container .skills p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
-.container .toolbox .tools {
+.container .skills .tools {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.container .toolbox .tools span {
+.container .skills .tools span {
   background-color: #646669;
   color: #D1D0C5;
   padding: 0.3rem 0.5rem;
@@ -174,11 +220,12 @@ img {
   margin-bottom: 0.5rem;
 }
 .container .contact {
-  padding-top: 4rem;
+  padding-top: 6rem;
   color: #D1D0C5;
 }
 .container .contact h1 {
   margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
 .container .contact form {
   display: flex;
@@ -232,7 +279,7 @@ img {
   color: #646669;
 }
 .container footer {
-  margin-top: 4rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
   color: #D1D0C5;
   font-size: 1rem;
@@ -247,4 +294,17 @@ img {
 }
 .container footer p {
   margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .container header {
+    position: sticky;
+    top: 0;
+    padding: 0.7rem;
+    border-radius: 0;
+    z-index: 1000;
+  }
 }/*# sourceMappingURL=style.css.map */

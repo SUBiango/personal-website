@@ -1,8 +1,8 @@
 // Variables
 @import 'config';
 
-// Global
 
+// Global Styles
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,11 +25,14 @@ img {
     margin: auto;
 
     header {
-    padding: 1rem;
+    position: sticky;
+    top: 1.5rem;
+    padding: 0.7rem;
     background-color: $header;
     color: $copy;
-    margin: 3rem 0;
     border-radius: 50px;
+    z-index: 1000;
+
 
         img {
             width: 25px;
@@ -58,7 +61,11 @@ img {
 
         .intro {
             margin-bottom: 1rem;
-            
+            span {
+                color: $white;
+                font-weight: 700;
+            }
+
             img {
                 width: 18%;
                 border-radius: 5%;
@@ -77,38 +84,66 @@ img {
             }
         }
 
-    .links {
+    .cta {
         display: flex;
         gap: 2rem;
         align-items: center;
+        justify-content: space-between;
 
-        a {
-            text-decoration: none;
-            color: $copy;
+        .quick-links {
+            display: flex;
+            gap: 2rem;
+
+            a {
+                text-decoration: none;
+                color: $copy;
+            }
+    
+            .btn1 {
+                background-color: #212121;
+                padding: 0.4rem 1rem;
+                border-radius: 5px;
+                color: $copy;
+                font-size: $p-form-mobile;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+    
+                &:hover {
+                    background-color: $white;
+                    color: $primary-color;
+                }
+            }
+    
+            .btn2 {
+                background-color: $primary-color;
+                padding: 0.4rem 1rem;
+                border-radius: 5px;
+                color: $copy;
+                font-size: $p-form-mobile;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+    
+                &:hover {
+                    background-color: $white;
+                    color: $primary-color;
+                }
+            }
+    
         }
 
-        .btn1 {
-            background-color: #212121;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            color: $copy;
-            font-size: $p-form-mobile;
-            cursor: pointer;
-        }
+        .social {
+            display: flex;
+            gap: 1rem;
 
-        .btn2 {
-            background-color: $primary-color;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            color: $copy;
-            font-size: $p-form-mobile;
-            cursor: pointer;
-        }
-
-        svg {
-            width: 30px;
-            color: $copy;
-            cursor: pointer;
+            svg {
+                width: 30px;
+                color: $copy;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
         }
     }
 }
@@ -119,6 +154,7 @@ img {
 
         h1 {
             margin-bottom: 1.5rem;
+            font-size: $h1-font-size;
         }
 
         p {
@@ -136,19 +172,27 @@ img {
         
         h1 {
             margin-bottom: 1.5rem;
+            font-size: $h1-font-size;
         }
 
         .project {
             display: flex;
+            gap: 1rem;
             margin-bottom: 1.5rem;
             background-color: $primary-color;
             border-radius: 10px;
+            overflow: hidden;
 
             .project-description {
                 padding: 1.5rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                h3 {
+                    font-size: $h3-font-size;
+                    margin-bottom: 1rem;
+                }
 
                 a  {
                     text-decoration: none;
@@ -168,30 +212,41 @@ img {
                         color: $copy;
                         padding: 0.3rem 0.5rem;
                         border-radius: 50px;
-                        font-size: $p-form-mobile;
+                        font-size: $xs;
                     }
                 }
             }
 
             img {
-                border-radius: 10px 0 0 10px;
+                border-radius: 0 10px 0 10px;
                 width: 50%;
+                margin: 2rem -1.5rem -1.5rem -1.5rem;
+                transition: transform 0.3s;
+            }
+
+            img:hover {
+                transform: rotate(3deg);
             }
 
             img:nth-child(even) {
-                border-radius: 0 10px 10px 0;
+                border-radius: 10px 0 10px 0;
                 width: 50%;
+            }
+
+            img:nth-child(even):hover {
+                transform: rotate(-3deg);
             }
         }
 
     }
 
-    .toolbox {
+    .skills {
         padding-top: $section-header-margin;
         color: $copy;
 
         h1 {
             margin-bottom: 1.5rem;
+            font-size: $h1-font-size;
         }
 
         p {
@@ -221,6 +276,7 @@ img {
 
         h1 {
             margin-bottom: 1.5rem;
+            font-size: $h1-font-size;
         }
 
         form {
@@ -305,3 +361,16 @@ img {
 }
 
 // Media Queries
+@media only screen and (max-width: 600px) {
+    .container {
+       width: 100%;
+
+       header {
+        position: sticky;
+        top: 0;
+        padding: 0.7rem;
+        border-radius: 0;
+        z-index: 1000;
+       }
+    }
+}
