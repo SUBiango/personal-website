@@ -294,17 +294,4 @@ img {
 }
 .container footer p {
   margin-top: 0.5rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 100%;
-  }
-  .container header {
-    position: sticky;
-    top: 0;
-    padding: 0.7rem;
-    border-radius: 0;
-    z-index: 1000;
-  }
 }/*# sourceMappingURL=style.css.map */
