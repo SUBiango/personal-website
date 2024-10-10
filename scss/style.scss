@@ -62,10 +62,6 @@ img {
 
         .intro {
             margin-bottom: 1rem;
-            span {
-                color: $white;
-                font-weight: 700;
-            }
 
             img {
                 width: 18%;
@@ -156,6 +152,15 @@ img {
         h1 {
             margin-bottom: 1.5rem;
             font-size: $h1-font-size;
+        }
+
+        a {
+            text-decoration: none;
+            color: $grey;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: $white;
+            }
         }
 
         p {
