@@ -10,6 +10,16 @@ body {
   font-size: 1.1rem;
 }
 
+a {
+  text-decoration: none;
+  color: #808080;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 img {
   max-width: 100%;
 }
@@ -123,14 +133,6 @@ img {
   margin-bottom: 1.5rem;
   font-size: 3rem;
 }
-.container .about a {
-  text-decoration: none;
-  color: #808080;
-  transition: 0.3s ease-in-out;
-}
-.container .about a:hover {
-  color: #ffffff;
-}
 .container .about p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -166,7 +168,7 @@ img {
 }
 .container .projects .project .project-description a {
   text-decoration: none;
-  color: #D1D0C5;
+  color: #E2B714;
 }
 .container .projects .project .project-description a:hover {
   color: #ffffff;
@@ -273,7 +275,7 @@ img {
   color: #D1D0C5;
 }
 .container .contact form button {
-  background-color: #2C2E31;
+  background-color: #646669;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
@@ -380,6 +382,9 @@ img {
   }
   .container .projects .project .project-description {
     padding: 0.7rem;
+  }
+  .container .projects .project .project-description p {
+    margin-bottom: 0.5rem;
   }
   .container .projects .project .project-description .stack {
     margin-top: 1rem;
