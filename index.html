@@ -228,10 +228,10 @@
 			<h1 data-aos="fade-up" data-aos-delay="100">Get In Touch</h1>
 			<form name="contact" method="POST" data-netlify="true" data-aos="fade-up" data-aos-delay="200">
 				<div class="form-group">
-					<input type="text" name="name" placeholder="Your Name">
-					<input type="email" name="email" placeholder="Your Email">
+					<input type="text" name="name" placeholder="Your Name" required>
+					<input type="email" id="mail" name="email" placeholder="Your Email" required>
 				</div>
-				<textarea name="message" placeholder="Type your message..." rows="5" cols="30"></textarea>
+				<textarea name="message" placeholder="Type your message..." rows="5" cols="30" required></textarea>
 				<button type="submit">LET IT FLY</button>
 			</form>
 		</section>

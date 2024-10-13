@@ -1,4 +1,6 @@
 // Scroll to section
+const email = document.getElementById('mail');
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -8,3 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 })
 
+email.addEventListener('input', (mail) => {
+	const input = mail.target
+	input.setCustomValidity(input.validity.typeMismatch ? 'Please enter a valid email' : '')
+});
