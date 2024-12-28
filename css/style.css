@@ -107,13 +107,9 @@ img {
   border-radius: 5px;
   color: #D1D0C5;
   font-size: 1rem;
-  cursor: pointer;
+  cursor: default;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-}
-.container .hero .cta .quick-links .btn2:hover {
-  background-color: #ffffff;
-  color: #2C2E31;
 }
 .container .hero .cta .social {
   display: flex;
@@ -234,65 +230,6 @@ img {
   padding: 0.3rem 0.5rem;
   border-radius: 50px;
   font-size: 1rem;
-}
-.container .contact {
-  padding-top: 6rem;
-  color: #D1D0C5;
-}
-.container .contact h1 {
-  margin-bottom: 1.5rem;
-  font-size: 3rem;
-}
-.container .contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.container .contact form .form-group {
-  display: flex;
-  gap: 2rem;
-}
-.container .contact form input, .container .contact form textarea {
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  width: 100%;
-  background-color: #646669;
-  color: #D1D0C5;
-  font-family: inherit;
-  font-size: 1.1rem;
-}
-.container .contact form input::-webkit-input-placeholder {
-  color: #D1D0C5;
-}
-.container .contact form input:-moz-placeholder {
-  color: #D1D0C5;
-}
-.container .contact form input::-ms-input-placeholder {
-  color: #D1D0C5;
-}
-.container .contact form textarea::-webkit-input-placeholder {
-  color: #D1D0C5;
-}
-.container .contact form textarea:-moz-placeholder {
-  color: #D1D0C5;
-}
-.container .contact form textarea::-ms-input-placeholder {
-  color: #D1D0C5;
-}
-.container .contact form button {
-  background-color: #646669;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  color: #D1D0C5;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-.container .contact form button:hover {
-  background-color: #ffffff;
-  color: #646669;
 }
 .container footer {
   margin-top: 6rem;

@@ -129,14 +129,9 @@ img {
                 border-radius: 5px;
                 color: $copy;
                 font-size: $p-form-mobile;
-                cursor: pointer;
+                cursor:default;
                 transition: 0.3s ease-in-out;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    
-                &:hover {
-                    background-color: $white;
-                    color: $black;
-                }
             }
     
         }
@@ -286,74 +281,6 @@ img {
                 border-radius: 50px;
                 font-size: $p-form-mobile;
             }
-        }
-    }
-
-    .contact {
-        padding-top: $section-header-margin;
-        color: $copy;
-
-        h1 {
-            margin-bottom: 1.5rem;
-            font-size: $h1-font-size;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-
-            .form-group {
-                display: flex;
-                gap: 2rem;
-            }
-
-            input, textarea {
-                padding: 0.5rem;
-                border-radius: 5px;
-                border: none;
-                width: 100%;
-                background-color: $primary-color;
-                color: $copy;
-                font-family: inherit;
-                font-size: $p;
-            }
-            input::-webkit-input-placeholder {
-              color: $copy; 
-            }
-            input:-moz-placeholder {
-              color: $copy; 
-            }
-            input::-ms-input-placeholder {
-              color: $copy; 
-            }
-
-            textarea::-webkit-input-placeholder {
-              color: $copy;
-            }
-            textarea:-moz-placeholder {
-              color: $copy;
-            }
-            textarea::-ms-input-placeholder {
-              color: $copy;
-            }
-            
-            button {
-                background-color: $primary-color;
-                padding: 0.5rem 1rem;
-                border-radius: 5px;
-                border: none;
-                color: $copy;
-                font-size: $p;
-                cursor: pointer;
-                transition: 0.3s ease-in-out;
-
-                &:hover {
-                    background-color: $white;
-                    color: $primary-color;
-                }
-            }
-
         }
     }
 
